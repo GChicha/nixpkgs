@@ -10,13 +10,13 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "wprs";
-  version = "0-unstable-2024-10-22";
+  version = "0-unstable-2025-02-06";
 
   src = fetchFromGitHub {
     owner = "wayland-transpositor";
     repo = "wprs";
-    rev = "6b993332c55568e66961b52bb6285e76d97d50df";
-    hash = "sha256-WrPr9b1r8As4Y5c+QCOYnHvY9x145+pL4OSmrGsYDpk=";
+    rev = "7095d5e4ee663fe7b930c197ede886791c27a943";
+    hash = "sha256-E7k93LqYOLb17IA7o3qXiFcFeknyOk+71lBtHNZ/Z2M=";
   };
 
   nativeBuildInputs = [
@@ -32,9 +32,8 @@ rustPlatform.buildRustPackage {
     lockFile = ./Cargo.lock;
 
     outputHashes = {
-      "divbuf-0.3.2-pre" = "sha256-xV0RWT4xu/LTVUGQSrafOgJ+X7FlnH7Cz6KreKSlCjw=";
-      "smithay-0.3.0" = "sha256-lqAJACmkJ6Ap/zRGjJjwJbQOynUPPhXAApHS60jYLxo=";
-      "smithay-client-toolkit-0.19.1" = "sha256-Sw/eM5rjaKVVFaEYaYj09jsxaLZTpD2IdQGpr/o0Fpc=";
+      "smithay-0.3.0" = "sha256-dA4jXU82FNbo8X5Hp56GIB7y+r1Ug1Kb8aaEs/K2L0E=";
+      "smithay-client-toolkit-0.19.2" = "sha256-wwfX5zJis8CwtJA9YjFKLQvb8pPwU+QP9zrvz/Jasls=";
     };
   };
 
